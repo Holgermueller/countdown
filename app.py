@@ -4,12 +4,17 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
+# def countdown():
+#     while True:
+#         difference
+
+display_string = "<h3>It's coming for you!</h3> <br> <h1>30</h1>"
+
+
 @app.route('/', methods=['GET'])
-def countdown():
-    present = datetime.datetime.now()
-    future = datetime.datetime(2023, 3, 9)
-    difference = future - present
-    return str(difference)
+def display_countdown():
+
+    return render_template("index.html")
 
 
 if __name__ == "__main__":

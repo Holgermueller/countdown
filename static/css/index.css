@@ -1,0 +1,11 @@
+.countdown-container {
+  width: 75%;
+  margin: 15% auto;
+  z-index: 4;
+  box-shadow: 10px 10px 5px lightgray;
+}
+h1 {
+  color: red;
+  text-align: center;
+  padding: 30px;
+}
