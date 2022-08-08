@@ -4,24 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/index.css') }}"
-    /> -->
-    <link rel="stylesheet" href="../static/css/index.css" />
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Countdown</title>
+    <title>30 | Countdown</title>
   </head>
   <body>
     <header>
       <h1 class="title">The countdown has begun!</h1>
     </header>
     <div class="countdown-container">
-      <h2 class="taunt">It is coming for you!</h2>
-      <h1 class="the-countdown">the Countdown goes here</h1>
+      <h2 class="taunt">It is coming for you, {{name}}</h2>
+      <h1 class="the-countdown">{{name}}</h1>
       <h2 class="taunt">You cannot escape it!</h2>
     </div>
     <footer>

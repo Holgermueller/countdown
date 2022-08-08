@@ -8,13 +8,13 @@ app = Flask(__name__)
 #     while True:
 #         difference
 
-display_string = "<h3>It's coming for you!</h3> <br> <h1>30</h1>"
+name = "Bryan"
 
 
 @app.route('/', methods=['GET'])
 def display_countdown():
 
-    return render_template("index.html")
+    return render_template("index.html", name=name)
 
 
 if __name__ == "__main__":
