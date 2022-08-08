@@ -12,16 +12,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>30 | Countdown</title>
+    <title>Countdown to 30</title>
   </head>
   <body>
     <header>
       <h1 class="title">The countdown has begun!</h1>
     </header>
     <div class="countdown-container">
-      <h2 class="taunt">It is coming for you, {{name}}</h2>
-      <h1 class="the-countdown">{{display_time}}</h1>
-      <h2 class="taunt">You cannot escape it!</h2>
+      <h2 class="taunt">It is coming for you, {{name}}.</h2>
+      <h1 id="theCountdown" class="the-countdown"></h1>
+      <h2 class="taunt">You cannot escape it.</h2>
     </div>
     <footer>
       <h5 class="copy">
@@ -36,5 +36,7 @@
         ></a>
       </h5>
     </footer>
+
+    <script src=" {{url_for('static', filename='js/index.js')}} "></script>
   </body>
 </html>
