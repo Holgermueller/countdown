@@ -1,5 +1,5 @@
-import time
-import datetime
+# import time
+# import datetime
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -26,7 +26,6 @@ name = "Bryan"
 
 @app.route('/', methods=['GET'])
 def display_countdown():
-    time.sleep(1)
     return render_template("index.html", name=name)
 
 

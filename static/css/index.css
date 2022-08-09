@@ -1,20 +1,29 @@
+body {
+  font-family: "Robot", sans-serif;
+}
 header {
   text-align: center;
-  background-color: darkcyan;
-  color: antiquewhite;
+  color: red;
   width: 100%;
-  z-index: 4;
-  box-shadow: 10px 10px 5px lightgray;
 }
 .title {
   padding: 8px;
 }
+hr {
+  width: 95%;
+  color: #696969;
+}
 .countdown-container {
   width: 55%;
-  margin: 7% auto;
+  margin: 3% auto;
   text-align: center;
   z-index: 4;
-  box-shadow: 10px 10px 5px lightgray;
+  box-shadow: 10px 10px 5px #696969;
+}
+.age {
+  color: #101010;
+  z-index: 100;
+  position: absolute;
 }
 .the-countdown {
   padding: 50px;
@@ -22,26 +31,25 @@ header {
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
-
 @keyframes countdown {
   0% {
     opacity: 0;
   }
   50% {
     opacity: 1;
+    color: red;
   }
   100% {
     opacity: 0;
   }
 }
-
 .taunt {
   padding: 50px;
+  color: #101010;
   animation-name: taunt;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-
 @keyframes taunt {
   0% {
     opacity: 1;
@@ -53,30 +61,26 @@ header {
     opacity: 1;
   }
 }
-
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  background-color: darkcyan;
-  color: antiquewhite;
+  color: red;
   width: 100%;
-  z-index: 4;
-  box-shadow: 10px 10px 5px lightgray;
 }
-h5 {
+h4 {
   padding: 4px;
 }
 i,
 a {
-  color: antiquewhite;
+  color: red;
   text-decoration: none;
 }
 .copy {
   float: left;
-  margin-left: 8px;
+  margin-left: 40px;
 }
 .social {
   float: right;
-  margin-right: 8px;
+  margin-right: 40px;
 }

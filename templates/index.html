@@ -13,28 +13,41 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Countdown to 30</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='favicon_io/favicon.ico') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <h1 class="title">The countdown has begun!</h1>
     </header>
+    <hr />
     <div class="countdown-container">
       <h2 class="taunt">It is coming for you, {{name}}.</h2>
       <h1 id="theCountdown" class="the-countdown"></h1>
       <h2 class="taunt">You cannot escape it.</h2>
     </div>
+    <hr />
     <footer>
-      <h5 class="copy">
+      <h4 class="copy">
         &copy; 2022 Holger Mueller / Meanstreak Enterprises |
         <a href="https://github.com/Holgermueller/countdown" target="_blank"
           >Repo</a
         >
-      </h5>
-      <h5 class="social">
+      </h4>
+      <h4 class="social">
         <a href="https://github.com/Holgermueller" target="_blank"
           ><i class="fa fa-github"></i
         ></a>
-      </h5>
+      </h4>
     </footer>
 
     <script src=" {{url_for('static', filename='js/index.js')}} "></script>
