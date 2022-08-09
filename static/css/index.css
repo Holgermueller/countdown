@@ -6,6 +6,9 @@ header {
   color: red;
   width: 100%;
 }
+.icon {
+  float: left;
+}
 .title {
   padding: 8px;
 }
